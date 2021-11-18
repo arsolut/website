@@ -93,6 +93,26 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+#container {
+  position: absolute;
+  margin: auto;
+  width: 100vw;
+  height: 80pt;
+  top: 0;
+  bottom: 0;
+  filter: url(#threshold) blur(0.6px);
+}
+#text1,
+#text2 {
+  position: absolute;
+  width: 100%;
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  font-size: 80pt;
+  text-align: center;
+  user-select: none;
+}
+
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -11828,8 +11848,8 @@ body {
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: #64a19d;
-  border: 1px solid #64a19d;
+  color: rgb(0 0 0 / 90%);
+  border: 1px solid rgb(0 0 0 / 90%);
 }
 #mainNav .navbar-toggler:focus {
   outline: none;
